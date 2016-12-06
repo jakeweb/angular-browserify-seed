@@ -24,6 +24,7 @@
     "gulp-replace": "^0.4.0",
     "gulp-rimraf": "^0.1.0",
     "gulp-ruby-sass": "^0.7.1",
+    "gulp-sass": "^2.3.2",
     "gulp-uglify": "^0.3.0",
     "gulp-watch": "^0.6.9",
     "imagemin-gifsicle": "^5.1.0",

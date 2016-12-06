@@ -5,11 +5,16 @@ var gulpif = require('gulp-if');
 var rename = require('gulp-rename');
 var csso = require('gulp-csso');
 var autoprefixer = require('gulp-autoprefixer');
-var sass = require('gulp-ruby-sass');
+// var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass')
+
+// var sassOptions = {
+//     style: 'compressed',
+//     'sourcemap=none': true
+// };
 
 var sassOptions = {
-    style: 'compressed',
-    'sourcemap=none': true
+    outputStyle: 'compressed'
 };
 
 function handleError(err) {
