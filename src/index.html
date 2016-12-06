@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html ng-app="expressly">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--bowerStyles-->
     <!--styles-->
 </head>
+
 <body>
-<div class="container" ng-view></div>
-<!--scripts-->
-<!--config-->
+    <div class="flex-wrapper">
+        <div class="flex-content text-center">
+            <header>
+                <nav>
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#"><i class="fa fa-home fa-4x" aria-hidden="true"></i></a></li>
+                        <li class="menu__item"><a href="#"><i class="fa fa-google fa-4x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container" ng-view></div>
+        </div>
+        <footer class="footer text-center">footer</footer>
+    </div>
+    <!--scripts-->
+    <!--config-->
 </body>
+
 </html>
