@@ -11,17 +11,19 @@
 <body>
     <div class="flex-wrapper">
         <div class="flex-content text-center">
-            <header>
+            <header class="header">
                 <nav>
                     <ul class="menu">
-                        <li class="menu__item"><a href="#/"><i class="fa fa-home fa-4x" aria-hidden="true"></i></a></li>
-                        <li class="menu__item"><a href="#"><i class="fa fa-google fa-4x" aria-hidden="true"></i></a></li>
+                        <li class="menu-item"><a href="#/"><i class="fa fa-home fa-4x" aria-hidden="true"></i></a></li>
+                        <li class="menu-item"><a href="https://www.google.com/" target="_blank"><i class="fa fa-google fa-4x" aria-hidden="true"></i></a></li>
                     </ul>
                 </nav>
             </header>
             <div class="container" ng-view></div>
         </div>
-        <footer class="footer text-center">footer</footer>
+        <footer class="footer text-center">
+            <a href="https://github.com/jakeweb/angular-browserify-seed/" target="_blank">Yevhenii Tanasiichuk</a>
+        </footer>
     </div>
     <!--scripts-->
     <!--config-->
