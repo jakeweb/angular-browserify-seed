@@ -12,25 +12,24 @@ module.exports = /*@ngInject*/
         var service = {
             getAll: getAll,
             getAlbum: getAlbum,
-            getAlbumPhotos: getAlbumPhotos
+            getPhoto: getPhoto
         };
 
         return service;
 
         function getAll() {
-            // console.log('getAll', api.all);
             return get(api.all);
         }
 
         function getAlbum(id) {
             var url = api.albumPrefix + id + api.albumPostfix;
-            console.log('getAlbum', url);
+            console.log('getAlbum', id);
             return get(url);
         }
 
-        function getAlbumPhotos(id) {
+        function getPhoto(id) {
             var url = api.photo + id;
-            console.log('getAlbumPhotos', url);
+            console.log('getPhoto', url);
             return get(url);
         }
 

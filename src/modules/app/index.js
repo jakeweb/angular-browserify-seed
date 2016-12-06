@@ -18,7 +18,6 @@ module.exports =
         // modules
         require('./gallery').name
     ])
-    .config( /*@ngInject*/ function($translateProvider, $locationProvider) {
-        $locationProvider.html5Mode(true);
+    .config( /*@ngInject*/ function($translateProvider) {
         $translateProvider.preferredLanguage('en');
     });

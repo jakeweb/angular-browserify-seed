@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = /*ngInject*/
-    function ($routeProvider) {
+    function($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'app/gallery/templates/gallery.html',
