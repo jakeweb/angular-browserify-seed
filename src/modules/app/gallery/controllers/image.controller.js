@@ -1,10 +1,11 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function albumController($scope, apiService) {
-        console.log('albumController');
+    function imageController($scope, apiService) {
+        console.log('imageController');
 
-        // apiService.getAlbum(1).then(function(data) {
+
+        // apiService.getAlbumPhotos(1).then(function(data) {
         //         console.log(data);
         //     })
         //     .catch(function(error) {

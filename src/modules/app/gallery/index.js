@@ -5,4 +5,4 @@ module.exports =
         .config(require('./routes.js'))
         .controller('galleryController', require('./controllers/gallery.controller'))
         .controller('albumController', require('./controllers/album.controller'))
-        .controller('photoController', require('./controllers/photo.controller'));
+        .controller('imageController', require('./controllers/image.controller'));

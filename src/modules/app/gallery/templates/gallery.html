@@ -1,1 +1,10 @@
-<h2>Gallery</h2>
+<div ng-init="start=0; end=10;" infinite-scroll="showMore()">
+    <div ng-repeat="image in images | limitTo : 10 track by $index" class="column">
+        <a href="/image/{{image.id}}" class="column">
+            <img src="{{image.thumbnailUrl}}" alt="{{image.title}}" title="{{image.title}}">
+        </a>
+        <a href="/album/{{image.albumId}}">
+        Open Album
+    </a>
+    </div>
+</div>

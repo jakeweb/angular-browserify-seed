@@ -7,6 +7,7 @@ module.exports =
         'ngAria',
         'ngMaterial',
         'pascalprecht.translate',
+        // 'infinite-scroll',
 
         // html templates in $templateCache
         require('../../../tmp/templates').name,
@@ -17,7 +18,7 @@ module.exports =
         // modules
         require('./gallery').name
     ])
-        .config(/*@ngInject*/ function ($translateProvider, $locationProvider) {
-            $locationProvider.html5Mode(true);
-            $translateProvider.preferredLanguage('en');
-        });
+    .config( /*@ngInject*/ function($translateProvider, $locationProvider) {
+        $locationProvider.html5Mode(true);
+        $translateProvider.preferredLanguage('en');
+    });

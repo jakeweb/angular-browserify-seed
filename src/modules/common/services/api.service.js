@@ -24,11 +24,13 @@ module.exports = /*@ngInject*/
 
         function getAlbum(id) {
             var url = api.albumPrefix + id + api.albumPostfix;
+            console.log('getAlbum', url);
             return get(url);
         }
 
         function getAlbumPhotos(id) {
             var url = api.photo + id;
+            console.log('getAlbumPhotos', url);
             return get(url);
         }
 
