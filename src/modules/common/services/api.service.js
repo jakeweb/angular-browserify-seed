@@ -18,7 +18,7 @@ module.exports = /*@ngInject*/
         return service;
 
         function getAll() {
-            console.log('getAll', api.all);
+            // console.log('getAll', api.all);
             return get(api.all);
         }
 

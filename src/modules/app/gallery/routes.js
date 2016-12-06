@@ -5,7 +5,12 @@ module.exports = /*ngInject*/
         $routeProvider
             .when('/', {
                 templateUrl: 'app/gallery/templates/gallery.html',
-                controller: 'galleryController'
+                controller: 'galleryController',
+                resolve: {
+                    allImages: ["apiService", function(apiService) {
+                        return apiService.getAll();
+                    }]
+                }
             })
             .when('/album/:id', {
                 templateUrl: 'app/gallery/templates/album.html',

@@ -1,24 +1,18 @@
 'use strict';
 
 module.exports = /*@ngInject*/
-    function galleryController($scope, apiService) {
-    	console.log('galleryController');
+    function galleryController($scope, apiService, allImages) {
 
-        var all = null;
+        $scope.start = 0;
+        $scope.step = 6;
+        $scope.end = 15;
 
-        apiService.getAll().then(function(response) {
-                all = response.data;
-                console.log(all.length);
-                $scope.images = all;
-            })
-            .catch(function(error) {
-                console.log(error);
-            });
+        $scope.images = [];
 
         $scope.showMore = function() {
-            $scope.images = all.slice($scope.start, $scope.end);
-            $scope.start += $scope.end;
-            $scope.end += $scope.end;
+            $scope.images = $scope.images.concat(allImages.data.slice($scope.start, $scope.end));
+            $scope.start = $scope.end;
+            $scope.end += $scope.step;
         };
 
     };
