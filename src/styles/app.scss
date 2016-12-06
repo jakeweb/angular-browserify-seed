@@ -28,7 +28,7 @@ a {
     text-decoration: none;
     @include transition();
     &:hover {
-        color: lighten($color-link, 25%);
+        color: lighten($color-link, 33%);
     }
 }
 
@@ -147,4 +147,5 @@ a {
     padding: 25px 15px;
     background: $color-black;
     font-size: 21px;
+    color: #fff;
 }
