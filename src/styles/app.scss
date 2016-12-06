@@ -102,7 +102,7 @@ a {
         a {
             color: $color-black;
             &:hover {
-                color: $color-link;
+                color: darken($color-link, 10%);
             }
         }
     }
@@ -117,8 +117,6 @@ a {
     position: relative;
     display: block;
     border-radius: 4px;
-    @include box-shadow();
-    @include transition();
     .img {
         margin: 25px 0;
     }
@@ -126,12 +124,17 @@ a {
         position: absolute;
         width: 100%;
         bottom: 0;
-        padding: 0 15px;
+        margin: 0;
+        padding: 15px;
         background: rgba(255, 255, 255, 0.2);
         color: $color-black;
     }
-    &:hover {
-        @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, .48));
+    &.shadow {
+        @include box-shadow();
+        @include transition();
+        &:hover {
+            @include box-shadow(0 2px 5px 0 rgba(0, 0, 0, .48));
+        }
     }
 }
 

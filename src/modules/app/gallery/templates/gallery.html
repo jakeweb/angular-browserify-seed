@@ -1,6 +1,6 @@
 <div infinite-scroll="showMore()" infinite-scroll-distance='1' class="cf">
     <div ng-repeat="image in images track by $index" class="column">
-        <a href="/#/album/{{image.albumId}}" class="img-container">
+        <a href="/#/album/{{image.albumId}}" class="img-container shadow">
             <img src="{{image.thumbnailUrl}}" class="img" alt="{{image.title}}" title="{{image.title}}">
             <p class="img-title text-center">{{image.title}}</p>
         </a>
