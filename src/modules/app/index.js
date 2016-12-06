@@ -7,7 +7,7 @@ module.exports =
         'ngAria',
         'ngMaterial',
         'pascalprecht.translate',
-        // 'infinite-scroll',
+        'infinite-scroll',
 
         // html templates in $templateCache
         require('../../../tmp/templates').name,
