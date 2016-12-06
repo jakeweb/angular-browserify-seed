@@ -16,7 +16,7 @@ module.exports = /*ngInject*/
                 templateUrl: 'app/gallery/templates/album.html',
                 controller: 'albumController'
             })
-            .when('/image/:id', {
+            .when('/photos/:id', {
                 templateUrl: 'app/gallery/templates/image.html',
                 controller: 'imageController'
             })

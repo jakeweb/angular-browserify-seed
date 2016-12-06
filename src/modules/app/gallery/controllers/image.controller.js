@@ -5,10 +5,10 @@ module.exports = /*@ngInject*/
         console.log('imageController', $routeParams.id);
 
 
-        // apiService.getAlbumPhotos(1).then(function(data) {
-        //         console.log(data);
-        //     })
-        //     .catch(function(error) {
-        //         console.log(error);
-        //     });
+        apiService.getPhoto($routeParams.id).then(function(response) {
+                $scope.image = response.data;
+            })
+            .catch(function(error) {
+                console.log(error);
+            });
     };
